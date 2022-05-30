@@ -1,7 +1,3 @@
-## WorkMotion DevOps Task:
-
-## _Solution Steps:_
-
 - Created Terraform Module : "main.tf" :
 > #### It Contains the following resources:  
 ```sh 
