@@ -48,13 +48,20 @@ https://github.com/HalaMEzzat/workmotion/settings/secrets/actions
 ![image](https://user-images.githubusercontent.com/106016107/169697615-83be0466-30f6-47d9-ae54-1c712a881567.png)
 
 - For CI/CD : I used github actions 
+> 🚨 Note: This is created on AWS Sandbox account to test the code :
+> 🚨 change AWS Credentials under secrets :
+```sh
+https://github.com/HalaEzzat/REST-AWS/settings/secrets
+```
+> 🚨 under "Repository secrets" <br />
+> 🚨 Change AWS_ACCESS_KEY_ID , AWS_SECRET_ACCESS_KEY with your creds <br />
 > Created .github\workflows\terraform.yml file where I: <br />
-> I manuaky the newly pushed code on github for testeing you can change the trigger event to on push instead<br />
+> I manualy checkout the newly pushed code on github for testeing 🚨 _you can change the trigger event to "on: push" instead_ 🚨 <br />
 > Install Go and Build the Solution <br />
 > Init => plan => apply terraform module <br />
 > created secrets for aws IAM creds and Github Token <br />
 ![image](https://user-images.githubusercontent.com/106038156/169804977-0f348e1f-2dda-43b3-95bd-6258e85d7029.png)
-> to test the CI/CD Pipline: go to Actions=>click on the workflow ".github/workflows/terraform.yml"=>under "workflow runs" click on "Run Workflow" then click on the green button "Run Workflow"
+> to test the CI/CD Pipline: go to Actions=>click on the workflow ".github/workflows/terraform.yml" => under "workflow runs" click on "Run Workflow" then click on the green button "Run Workflow" <br />
 > See the Attached screenshot:
 > ![image](https://user-images.githubusercontent.com/106038156/169806970-54ed9037-b65b-4951-b424-83dac1100142.png)
 
